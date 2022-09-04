@@ -1,0 +1,21 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine(createKey());
+	}
+
+	private static string createKey()
+	{
+		string text = "alicia";
+		string text3 = "X398";
+		string text4 = "33CE";
+		string text5 = "A639";
+		
+		text = text.Substring(0, 4).ToUpper();
+		string value = text3 + text + text4 + text5;
+		return value;
+	}
+}
